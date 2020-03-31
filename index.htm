@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+
+/* light brown #d8af86 */
+
+.bear {
+  position: relative;
+  margin: auto;
+  display: block;
+  margin-top: 5%;
+  width: 300px;
+  height: 400px;
+  /* background-color: green; */
+}
+
+.bear-top {
+  top: 8.5%;
+  left: 25%;
+  background-color: #C4884b;
+  width: 50%;
+  height: 40%;
+  border-radius: 50%;
+}
+
+.bear-bottom {
+  top: 40%;
+  left: 22.5%;
+  width: 55%;
+  height: 50%;
+  background-color: #be7e3e;
+  border-radius: 50% 50% 40% 40%;
+}
+
+.right-hand {
+  top: 15%;
+  right: -17%;
+  width: 32%;
+  height: 45%;
+  background-color: #c4884b;
+  border-radius: 50% 50% 50% 50%;
+  transform: rotate(-45deg);
+  z-index: -1;
+}
+
+.left-hand {
+  top: 15%;
+  left: -17%;
+  width: 32%;
+  height: 45%;
+  background-color: #c4884b;
+  border-radius: 50% 50% 50% 50%;
+  transform: rotate(45deg);
+  z-index: -1;
+}
+
+.right-foot {
+  bottom: -10%;
+  right: -10%;
+  width: 45%;
+  height: 50%;
+  background-color: rgba(196,136,75);
+  border-radius: 50%;
+  transform: rotate(20deg);
+}
+
+.right-foot-inside {
+  top: 12.5%;
+  left: 12.5%;
+  width: 75%;
+  height: 75%;
+  background-color: #d8af86;
+  border-radius: 50%;
+}
+
+.left-foot {
+  bottom: -10%;
+  left: -10%;
+  width: 45%;
+  height: 50%;
+  background-color: #c4884b;
+  border-radius: 50%;
+  transform: rotate(-20deg);
+}
+
+.left-foot-inside {
+  top: 12.5%;
+  left: 12.5%;
+  width: 75%;
+  height: 75%;
+  background-color: #d8af86;
+  border-radius: 50%;
+}
+
+.bear-snout {
+  bottom: 10%;
+  left: 25%;
+  width: 50%;
+  height: 40%;
+  background-color: #d8af86;
+  border-radius: 50%;
+}
+
+.bear-nose {
+  top: 20%;
+  left: 30%;
+  width: 40%;
+  height: 35%;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.nose-sparkle {
+  top: 17%;
+  left: 30%;
+  width: 15%;
+  height: 15%;
+  background-color: gray;
+  border-radius: 50%;
+}
+
+.right-eye {
+  top: 37%;
+  right: 30%;
+  width: 10%;
+  height: 15%;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.right-eye-sparkle {
+  top: 30%;
+  left: 20%;
+  width: 25%;
+  height: 20%;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.left-eye {
+  top: 37%;
+  left: 30%;
+  width: 10%;
+  height: 15%;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.left-eye-sparkle {
+  top: 30%;
+  right: 20%;
+  width: 25%;
+  height: 20%;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.right-ear {
+  top: -2%;
+  right: -5%;
+  width: 30%;
+  height: 30%;
+  background-color: #C4884b;
+  border-radius: 50%;
+}
+
+.right-ear-inside {
+  top: 25%;
+  right: 25%;
+  width: 50%;
+  height: 50%;
+  background-color: #d8af86;
+  border-radius: 75% 125% 75% 75%;
+}
+
+.left-ear {
+  top: -2%;
+  left: -5%;
+  width: 30%;
+  height: 30%;
+  background-color: #C4884b;
+  border-radius: 50%;
+}
+
+.left-ear-inside {
+  top: 25%;
+  left: 25%;
+  width: 50%;
+  height: 50%;
+  background-color: #d8af86;
+  border-radius: 125% 75% 75% 75%;
+}
+
+
+
+body {
+  background:#c6faf1;
+}
+
+.bear * {
+  position: absolute;
+}
+
+</style>
+<div class="bear">
+  <div class="bear-bottom">
+    <div class="right-hand"></div>
+    <div class="left-hand"></div>
+    <div class="right-foot">
+      <div class="right-foot-inside"></div>
+    </div>
+    <div class="left-foot">
+      <div class="left-foot-inside"></div>
+    </div>
+  </div>
+  <div class="bear-top">
+    <div class="bear-head"></div>
+    <div class="bear-body"></div>
+    <div class="belly"></div>
+    <div class="right-ear">
+      <div class="right-ear-inside"></div>
+    </div>
+    <div class="left-ear">
+      <div class="left-ear-inside"></div>
+    </div>
+    <div class="bear-snout">
+      <div class="bear-nose">
+        <div class="nose-sparkle"></div>
+      </div>
+    </div>
+    <div class="right-eye">
+      <div class="right-eye-sparkle"></div>
+    </div>
+    <div class="left-eye">
+      <div class="left-eye-sparkle"></div>
+    </div>
+  </div>
+</div>
+</html>
